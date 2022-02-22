@@ -351,16 +351,32 @@ h2 {
 
 .attribution {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .3rem;
 }
 
 .attribution p {
     color: black;
-    font-size: .8rem;
+    font-size: .6rem;
     font-weight: bold;
+    text-align: center;
 }
-.attribution a {
+
+@media (min-width: 1200px) {
+.attribution p {
+    font-size: .8rem;
+    }
+}
+
+.attribution a:link {
+    font-size: .6rem;
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1200px) {
+.attribution a:link {
+    font-size: .8rem;
+    }
 }
